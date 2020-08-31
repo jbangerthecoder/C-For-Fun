@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+const int PRICE_SMALLROOM = 25;
+const int PRICE_LRGROOM = 35;\
+const double TAX = .06;
+
+int main() {
+  
+  int large_room, smallroom;
+  
+  cout << "\nWelcome to Jonathan's Cleaning Service!";
+  cout << "\n\nHow many small rooms would you liked cleaned? ";
+  cin >> smallroom;
+  cout << "\nHow many large rooms would you liked cleaned? ";
+  cin >> large_room;
+  cout << "\nPrice Per Small Room: $" << smallroom * PRICE_SMALLROOM;
+  cout << "\nPrice Per Large Room: $" << large_room * PRICE_LRGROOM;
+  cout <<             "\nTotal Cost: $" << (smallroom * PRICE_SMALLROOM) + (large_room * PRICE_LRGROOM);
+  cout <<                  "\nTax: $" << (smallroom * PRICE_SMALLROOM + large_room * PRICE_LRGROOM
+  ) * TAX;
+   cout << "\n===========================";
+   cout <<      "\nTotal Estimate: $" << (smallroom * PRICE_SMALLROOM + large_room * PRICE_LRGROOM) + (smallroom * PRICE_SMALLROOM + large_room * PRICE_LRGROOM * TAX);
+   cout << "\nThis Estimate is VALID for " << 30 << " Days.";
+   cout << "\n\n\nThank you for shopping at Jonathan's Cleaning Service!";
+
+  
+}
